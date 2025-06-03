@@ -95,7 +95,7 @@ If you find this project helpful, please give it a ⭐️ on GitHub!
 
 For any queries or support, please reach out to us through:
 - GitHub Issues
-- Email: support@studyflow.com
+- Email: himanshuofficialuserid@gmail.com
 
 ---
 
