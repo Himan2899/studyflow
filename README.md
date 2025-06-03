@@ -14,8 +14,8 @@ A modern and efficient study management application designed to help students or
 
 ### Prerequisites
 
-- Node.js (v14.0.0 or higher)
-- npm or yarn package manager
+- Node.js (v16.0.0 or higher)
+- npm, yarn, or pnpm package manager
 - Modern web browser
 
 ### Installation
@@ -35,6 +35,8 @@ cd studyflow
 npm install
 # or
 yarn install
+# or
+pnpm install
 ```
 
 4. Start the development server
@@ -42,27 +44,44 @@ yarn install
 npm run dev
 # or
 yarn dev
+# or
+pnpm dev
 ```
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React.js, Next.js
-- **Styling**: Tailwind CSS
-- **State Management**: Redux/Context API
-- **Database**: MongoDB
-- **Authentication**: NextAuth.js
-- **Deployment**: streamlit
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Frontend**: React 19
+- **Styling**: 
+  - Tailwind CSS
+  - Radix UI Components
+  - Framer Motion (Animations)
+- **Database**: Supabase
+- **Authentication**: Supabase Auth
+- **Form Handling**: React Hook Form with Zod validation
+- **State Management**: React Context
+- **UI Components**: 
+  - Radix UI
+  - Lucide React (Icons)
+  - Recharts (Data Visualization)
+- **Development Tools**:
+  - TypeScript
+  - PostCSS
+  - ESLint
 
 ## 📁 Project Structure
 
 ```
 studyflow/
+├── app/            # Next.js app directory
 ├── components/     # Reusable UI components
-├── pages/         # Application pages
+├── contexts/       # React context providers
+├── hooks/          # Custom React hooks
+├── lib/           # Utility functions and configurations
 ├── public/        # Static assets
-├── styles/        # Global styles
-├── utils/         # Utility functions
-└── config/        # Configuration files
+├── styles/        # Global styles and Tailwind config
+└── types/         # TypeScript type definitions
 ```
 
 ## 🔧 Configuration
@@ -70,9 +89,8 @@ studyflow/
 Create a `.env.local` file in the root directory with the following variables:
 
 ```env
-MONGODB_URI=your_mongodb_uri
-NEXTAUTH_SECRET=your_nextauth_secret
-NEXTAUTH_URL=http://localhost:3000
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 ```
 
 ## 📝 Contributing
@@ -94,9 +112,9 @@ If you find this project helpful, please give it a ⭐️ on GitHub!
 ## 📞 Contact
 
 For any queries or support, please reach out to us through:
-- GitHub Issues
-- Email: support@studyflow.com
+- Email: himanshuofficialuserid@gmail.com
 
 ---
 
 Developed with ❤️ by Himanshu Bali 💻👨‍💻🚀
+
