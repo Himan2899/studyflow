@@ -94,7 +94,6 @@ If you find this project helpful, please give it a ⭐️ on GitHub!
 ## 📞 Contact
 
 For any queries or support, please reach out to us through:
-- GitHub Issues
 - Email: himanshuofficialuserid@gmail.com
 
 ---
