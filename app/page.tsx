@@ -15,46 +15,6 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState("overview")
   const { user, loading } = useAuth()
 
-  if (loading) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100">
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 1, repeat: Number.POSITIVE_INFINITY, ease: "linear" }}
-          className="w-8 h-8 border-2 border-blue-500 border-t-transparent rounded-full"
-        />
-      </div>
-    )
-  }
-
-  if (!user) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 p-4">
-        <div className="w-full max-w-md">
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-center mb-8"
-          >
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-              StudyFlow
-            </h1>
-            <p className="text-gray-700">Your intelligent study companion ✨</p>
-          </motion.div>
-
-          <AnimatePresence mode="wait">
-            {authMode === "login" ? (
-              <ImprovedLoginForm key="login" onToggleMode={() => setAuthMode("signup")} />
-            ) : (
-              <ImprovedSignupForm key="signup" onToggleMode={() => setAuthMode("login")} />
-            )}
-          </AnimatePresence>
-        </div>
-      </div>
-    )
-  }
-
   const renderActiveTab = () => {
     switch (activeTab) {
       case "overview":
